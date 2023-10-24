@@ -12,7 +12,7 @@ import Firebase
 struct ContentView: View {
     //@State makes the variable "Globally" accessible. Without it the variable would be private to this struct.
     
-    //@State makes it so the value is able to change and be mutable. 
+    //@State makes it so the value is able to change and be mutable.
     
     @State private var email:String = ""
     @State private var password:String = ""
@@ -88,7 +88,8 @@ struct ContentView: View {
             
             if error != nil {
                 print(error!.localizedDescription)
-                //Here if we wanted to we could present a popup to the user explaining data cant be grabbed. 
+                
+                //Here if we wanted to we could present a popup to the user explaining a error occured and they cant be logged it. 
             }
             
         }

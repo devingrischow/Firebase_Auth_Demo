@@ -10,6 +10,10 @@ import FirebaseAuth
 import Firebase
 
 struct ContentView: View {
+    //@State makes the variable "Globally" accessible. Without it the variable would be private to this struct.
+    
+    //@State makes it so the value is able to change and be mutable. 
+    
     @State private var email:String = ""
     @State private var password:String = ""
     
@@ -17,7 +21,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Text("Welcome To The Basic Signup and Login!")
+            Text("Welcome To The Basic Signup and Login Demonstration!")
+                //sets the text style to be like a poem, Centered
+                .multilineTextAlignment(.center)
             
             TextField("Email", text: $email)
             //Text Field Modifiers
@@ -51,9 +57,11 @@ struct ContentView: View {
              Call the function to register a new user.
         
              */
+            
             Button{
                 registerNewUser()
             }label: {
+                //Button Modifiers for rounded look.
                 Text("Login")
                     .padding(.top, 20)
                     .frame(width: 100)
@@ -68,12 +76,14 @@ struct ContentView: View {
     
     //Firebase Handles both new logins and new users similarly, but here would most likely be a check in
     func registerNewUser(){
+        
         /*
          This is a function from the firebase Auth Library
          
          All this function does is create a user with the given parameters: withEmail and a password.
          The format you see with this function is how we can manipulate the function to throw out a error when something occurs.
          */
+        
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             
             if error != nil {

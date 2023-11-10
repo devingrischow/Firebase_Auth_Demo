@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
-import FirebaseAuth
+import Firebase
 import Firebase
 
+
 struct ContentView: View {
+    
     //@State makes the variable "Globally" accessible. Without it the variable would be private to this struct.
     
     //@State makes it so the value is able to change and be mutable.
@@ -59,11 +61,14 @@ struct ContentView: View {
              */
             
             Button{
+                
                 registerNewUser()
+                
             }label: {
                 //Button Modifiers for rounded look.
-                Text("Login")
-                    .padding(.top, 20)
+                Text("Sign UP!")
+                    .padding([.bottom, .top], 20)
+                
                     .frame(width: 100)
                     .background(.orange)
                     .cornerRadius(15)
@@ -80,16 +85,19 @@ struct ContentView: View {
         /*
          This is a function from the firebase Auth Library
          
-         All this function does is create a user with the given parameters: withEmail and a password.
+         All this function does is create a new user with the given parameters: withEmail and a password.
          The format you see with this function is how we can manipulate the function to throw out a error when something occurs.
          */
+        
+        
         
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             
             if error != nil {
                 print(error!.localizedDescription)
                 
-                //Here if we wanted to we could present a popup to the user explaining a error occured and they cant be logged it. 
+                //Here if we wanted to we could present a popup to the user explaining a error occured and they cant be logged it.
+                
             }
             
         }

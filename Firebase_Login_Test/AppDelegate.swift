@@ -8,6 +8,7 @@
 import SwiftUI
 import FirebaseCore
 
+
 /*
  A Delegate controlls parts of the apps flow and its background interactions
  In this case when the app is launched and being used the first thing that happens is that

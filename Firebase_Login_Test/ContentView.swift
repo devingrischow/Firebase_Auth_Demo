@@ -39,6 +39,8 @@ struct ContentView: View {
                 .foregroundColor (.black)
             
             
+            //Todo: working on rectangle shape, will continue to work on 
+            
             /*
              This Secure Field is similar to password fields youve seen before
              By default everything in this field is

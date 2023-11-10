@@ -18,6 +18,7 @@
 		232781012AE7019800D6159F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 232781002AE7019800D6159F /* FirebaseFirestoreSwift */; };
 		232781032AE7019800D6159F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 232781022AE7019800D6159F /* FirebaseStorage */; };
 		232781052AE70A4400D6159F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232781042AE70A4400D6159F /* AppDelegate.swift */; };
+		2368D8D32AF044DC00394742 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368D8D22AF044DC00394742 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		232780F02AE6FED600D6159F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		232780F72AE6FFB000D6159F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		232781042AE70A4400D6159F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2368D8D22AF044DC00394742 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				232780EB2AE6FED500D6159F /* ContentView.swift */,
 				232780ED2AE6FED600D6159F /* Assets.xcassets */,
 				232780EF2AE6FED600D6159F /* Preview Content */,
+				2368D8D22AF044DC00394742 /* DataManager.swift */,
 			);
 			path = Firebase_Login_Test;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232781052AE70A4400D6159F /* AppDelegate.swift in Sources */,
+				2368D8D32AF044DC00394742 /* DataManager.swift in Sources */,
 				232780EC2AE6FED500D6159F /* ContentView.swift in Sources */,
 				232780EA2AE6FED500D6159F /* Firebase_Login_TestApp.swift in Sources */,
 			);
